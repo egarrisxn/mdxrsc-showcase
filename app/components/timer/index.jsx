@@ -1,6 +1,6 @@
 'use client'
 import styles from './timer.module.css'
-import React, { useEffect, useState } from 'react'
+import React, {useEffect, useState} from 'react'
 
 const timeStringOptions = [
   {
@@ -83,12 +83,7 @@ const TimeOfDay = () => {
   }
 
   return (
-    <button
-      className={styles.button}
-      onClick={onClick}
-      type="button"
-      aria-label="Time of day"
-    >
+    <button className={styles.button} onClick={onClick} type='button' aria-label='Time of day'>
       <MemoTimeDisplay format={format} />
     </button>
   )
@@ -96,7 +91,7 @@ const TimeOfDay = () => {
 
 export default TimeOfDay
 
-const TimeDisplay = ({ format }) => {
+const TimeDisplay = ({format}) => {
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {

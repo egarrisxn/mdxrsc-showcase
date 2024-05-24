@@ -1,7 +1,7 @@
 import styles from './navigation.module.css'
 import Link from '../link'
 
-export default function Navigation({ previous, next }) {
+export default function Navigation({previous, next}) {
   return (
     <nav className={styles.navigation}>
       <div className={styles.previous}>

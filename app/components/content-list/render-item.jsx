@@ -1,8 +1,7 @@
 'use client'
 import BlockEntry from '../../components/entry/block'
 
-export const renderItem = (item) =>
-  item.type === 'post' ? renderPost(item) : renderNote(item)
+export const renderItem = (item) => (item.type === 'post' ? renderPost(item) : renderNote(item))
 
 export const getTag = (post) => [post.type]
 

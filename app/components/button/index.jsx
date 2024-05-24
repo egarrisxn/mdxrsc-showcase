@@ -1,6 +1,6 @@
 import styles from './button.module.css'
-import { forwardRef } from 'react'
-import { Spinner } from '../spinner'
+import {forwardRef} from 'react'
+import {Spinner} from '../spinner'
 import clsx from 'clsx'
 
 // eslint-disable-next-line react/display-name
@@ -33,18 +33,14 @@ const Button = forwardRef(
         })}
         disabled={disabled || loading}
         onClick={onClick}
-        style={{ height, width, margin, padding, ...style }}
+        style={{height, width, margin, padding, ...style}}
         {...props}
       >
         {children && iconLeft && (
           <span className={clsx(styles.icon, styles.iconLeft)}>{iconLeft}</span>
         )}
         {!loading &&
-          (children ? (
-            children
-          ) : (
-            <span className={styles.icon}>{iconLeft || iconRight}</span>
-          ))}
+          (children ? children : <span className={styles.icon}>{iconLeft || iconRight}</span>)}
         {loading && (
           <span
             style={{
@@ -57,9 +53,7 @@ const Button = forwardRef(
           </span>
         )}
         {children && iconRight && (
-          <span className={clsx(styles.icon, styles.iconRight)}>
-            {iconRight}
-          </span>
+          <span className={clsx(styles.icon, styles.iconRight)}>{iconRight}</span>
         )}
       </button>
     )

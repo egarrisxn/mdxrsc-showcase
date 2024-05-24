@@ -2,11 +2,11 @@ export default function robots() {
   return {
     rules: [
       {
-        userAgent: "*",
-        allow: ["/"],
+        userAgent: '*',
+        allow: ['/'],
       },
     ],
-    sitemap: "http://mdxrsc-showcase.vercel.app/sitemap.xml",
-    host: "http://mdxrsc-showcase.vercel.app",
-  };
+    sitemap: 'http://mdxrsc-showcase.vercel.app/sitemap.xml',
+    host: 'http://mdxrsc-showcase.vercel.app',
+  }
 }

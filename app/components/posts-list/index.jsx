@@ -1,6 +1,6 @@
 'use client'
 import styles from './posts-list.module.css'
-import { useState } from 'react'
+import {useState} from 'react'
 import BlockEntry from '../entry/block'
 
 export default function Posts(props) {
@@ -16,7 +16,7 @@ export default function Posts(props) {
     )
   }
 
-  const { posts, paginate } = props
+  const {posts, paginate} = props
 
   return (
     <ul className={styles.container}>

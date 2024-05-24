@@ -8,9 +8,9 @@ export const metadata = {
   },
 }
 
-export default function BlogLayout({ children }) {
+export default function BlogLayout({children}) {
   return (
-    <Outline type="layout" name="Blog">
+    <Outline type='layout' name='Blog'>
       <article>{children}</article>
     </Outline>
   )

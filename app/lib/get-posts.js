@@ -1,4 +1,4 @@
-import { cache } from 'react'
+import {cache} from 'react'
 import fs from 'fs/promises'
 import matter from 'gray-matter'
 import path from 'path'
@@ -6,8 +6,7 @@ import path from 'path'
 const thirdPartyPosts = [
   {
     title: '#3 | A Paradigm Shift',
-    description:
-      'The Ascendance of AI in Software and Web Development: A Paradigm Shift',
+    description: 'The Ascendance of AI in Software and Web Development: A Paradigm Shift',
     body: '',
     date: '2024-04-05',
     slug: 'a-paradigm-shift',
@@ -49,13 +48,11 @@ export const getPosts = cache(async (includeThirdPartyPosts) => {
 
   const postsWithMetadata = await Promise.all(
     posts
-      .filter(
-        (file) => path.extname(file) === '.md' || path.extname(file) === '.mdx',
-      )
+      .filter((file) => path.extname(file) === '.md' || path.extname(file) === '.mdx')
       .map(async (file) => {
         const filePath = `./posts/${file}`
         const postContent = await fs.readFile(filePath, 'utf8')
-        const { data, content } = matter(postContent)
+        const {data, content} = matter(postContent)
 
         if (data.published === false) {
           return null
@@ -77,15 +74,12 @@ export const getPosts = cache(async (includeThirdPartyPosts) => {
         if (commitInfo?.length) {
           lastModified = new Date(commitInfo[0].commit.committer.date).getTime()
 
-          if (
-            lastModified - new Date(data.date).getTime() <
-            24 * 60 * 60 * 1000
-          ) {
+          if (lastModified - new Date(data.date).getTime() < 24 * 60 * 60 * 1000) {
             lastModified = 0
           }
         }
 
-        return { ...data, body: content, lastModified, type: 'post' }
+        return {...data, body: content, lastModified, type: 'post'}
       }),
   )
 
@@ -96,9 +90,7 @@ export const getPosts = cache(async (includeThirdPartyPosts) => {
 
   const filtered = postsWithMetadataAndThirdPartyPosts
     .filter((post) => post !== null)
-    .sort((a, b) =>
-      a && b ? new Date(b.date).getTime() - new Date(a.date).getTime() : 0,
-    )
+    .sort((a, b) => (a && b ? new Date(b.date).getTime() - new Date(a.date).getTime() : 0))
 
   return filtered
 })

@@ -1,13 +1,13 @@
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import {MDXRemote} from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
 import remarkFrontmatter from 'remark-frontmatter'
 import rehypeSlug from 'rehype-slug'
 import rehypeAutolinkHeadings from 'rehype-autolink-headings'
 import remarkA11yEmoji from '@fec/remark-a11y-emoji'
 import remarkToc from 'remark-toc'
-import { mdxComponents } from './components'
+import {mdxComponents} from './components'
 
-export function PostBody({ children }) {
+export function PostBody({children}) {
   return (
     <MDXRemote
       source={children}

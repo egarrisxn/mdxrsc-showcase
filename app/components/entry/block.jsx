@@ -5,7 +5,7 @@ export default function BlockEntry(props) {
   if ('skeleton' in props) {
     return <li className={styles.skeleton} />
   }
-  const { title, description, type, href, date, views, isThirdParty } = props
+  const {title, description, type, href, date, views, isThirdParty} = props
 
   return (
     <li className={styles.item}>
@@ -17,7 +17,7 @@ export default function BlockEntry(props) {
         external={isThirdParty}
       >
         {Boolean(type || date) ? (
-          <div style={{ display: 'flex', gap: 'var(--gap-quarter)' }}>
+          <div style={{display: 'flex', gap: 'var(--gap-quarter)'}}>
             {Boolean(date) && (
               <div className={styles.wrapper}>
                 {date && (
@@ -36,11 +36,11 @@ export default function BlockEntry(props) {
                 ) : null}
               </div>
             )}{' '}
-            <span style={{ color: 'var(--gray)' }} aria-hidden>
+            <span style={{color: 'var(--gray)'}} aria-hidden>
               /
             </span>
             {type ? (
-              <span style={{ color: 'var(--gray)' }}>
+              <span style={{color: 'var(--gray)'}}>
                 {type.charAt(0).toUpperCase() + type.slice(1)}
               </span>
             ) : (
@@ -51,9 +51,7 @@ export default function BlockEntry(props) {
 
         <h4 className={`${styles.title}`}>{title}</h4>
         {description && <p className={styles.description}>{description}</p>}
-        {isThirdParty && (
-          <span className={styles.thirdParty}>{new URL(href).hostname}</span>
-        )}
+        {isThirdParty && <span className={styles.thirdParty}>{new URL(href).hostname}</span>}
       </Link>
     </li>
   )

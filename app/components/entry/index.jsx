@@ -1,17 +1,9 @@
 import styles from './entry.module.css'
 import Badge from '../badge'
 import Link from '../link'
-import { Star } from '../icons'
+import {Star} from '../icons'
 
-export const Entry = ({
-  href,
-  title,
-  description,
-  role,
-  years,
-  showYears = true,
-  stars,
-}) => (
+export const Entry = ({href, title, description, role, years, showYears = true, stars}) => (
   <li className={styles.wrapper}>
     <div className={styles.split}>
       <h4 className={styles.title}>
@@ -36,7 +28,7 @@ export const Entry = ({
             }}
           >
             <Badge className={styles.starBadge}>
-              <Star size={14} /> <span style={{ marginLeft: 4 }}>{stars}</span>
+              <Star size={14} /> <span style={{marginLeft: 4}}>{stars}</span>
             </Badge>
           </Link>
         )}

@@ -12,10 +12,10 @@
 
 .button::before {
   @media (min-width: 768px) {
-    content: "Florida:";
+    content: 'Florida:';
   }
 
   @media (max-width: 767px) {
-    content: "FL:";
+    content: 'FL:';
   }
 }

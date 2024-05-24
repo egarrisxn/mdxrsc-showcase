@@ -26,25 +26,25 @@
 }
 
 /* directions */
-.tooltip[data-direction="left"]::after {
+.tooltip[data-direction='left']::after {
   top: 50%;
   left: 0;
   transform: translate(calc(-100% - 10px), -50%);
 }
 
-.tooltip[data-direction="bottom"]::after {
+.tooltip[data-direction='bottom']::after {
   top: 50%;
   left: 0;
   transform: translate(calc(-100% - 10px), 50%);
 }
 
-.tooltip[data-direction="top"]::after {
+.tooltip[data-direction='top']::after {
   top: 0;
   left: 50%;
   transform: translate(-50%, calc(-100% - 10px));
 }
 
-.tooltip[data-direction="right"]::after {
+.tooltip[data-direction='right']::after {
   top: 0;
   left: 50%;
   transform: translate(50%, calc(-100% - 10px));
@@ -54,6 +54,6 @@
 @media reader, speech, aural {
   .tooltip::after {
     display: none;
-    content: "";
+    content: '';
   }
 }

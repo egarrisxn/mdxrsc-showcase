@@ -10,7 +10,9 @@
   display: flex;
   align-items: center;
   padding: var(--gap-quarter) var(--gap-half);
-  transition: background-color var(--transition), color var(--transition);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
 }
 
 .button:hover,

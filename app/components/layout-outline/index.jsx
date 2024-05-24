@@ -1,10 +1,10 @@
 import styles from './layout-outline.module.css'
 import React from 'react'
-import { clsx } from 'clsx'
+import {clsx} from 'clsx'
 
 const RENDER = false
 
-export default function Outline({ name, children, type }) {
+export default function Outline({name, children, type}) {
   if (!RENDER) return <>{children}</>
 
   return (

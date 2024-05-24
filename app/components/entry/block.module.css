@@ -89,7 +89,7 @@
 }
 
 .thirdParty:after {
-  content: "↗";
+  content: '↗';
   margin-left: 0.25rem;
   font-size: 0.7rem;
   /* position up a little */

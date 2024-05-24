@@ -1,8 +1,8 @@
-export default function Layout({ children, header }) {
+export default function Layout({children, header}) {
   return (
     <>
       {header}
       {children}
     </>
-  );
+  )
 }

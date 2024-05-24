@@ -1,12 +1,8 @@
 import styles from './projects.module.css'
 import Link from '../link'
-import { Entry } from '../entry'
+import {Entry} from '../entry'
 
-export default function ProjectList({
-  projects = [],
-  seeMore = false,
-  showYears = true,
-}) {
+export default function ProjectList({projects = [], seeMore = false, showYears = true}) {
   projects.sort((a, b) => parseInt(b.years[0]) - parseInt(a.years[0]))
 
   return (
@@ -27,7 +23,7 @@ export default function ProjectList({
       })}
       {seeMore && (
         <li>
-          See more projects <Link href="/projects"> here</Link>.
+          See more projects <Link href='/projects'> here</Link>.
         </li>
       )}
     </ul>

@@ -1,7 +1,7 @@
 import styles from './mdx-note.module.css'
 import Info from '../../components/icons/info'
 
-export function MDXNote({ children, ...props }) {
+export function MDXNote({children, ...props}) {
   return (
     <aside {...props} className={styles.note}>
       <div className={styles.icon}>

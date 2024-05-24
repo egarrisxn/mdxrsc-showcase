@@ -14,7 +14,9 @@
   background: var(--lighter-gray);
   border: none;
   padding: var(--gap-half) var(--gap);
-  transition: background-color var(--transition), color var(--transition);
+  transition:
+    background-color var(--transition),
+    color var(--transition);
   outline: none;
 }
 

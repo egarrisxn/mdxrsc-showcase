@@ -1,7 +1,7 @@
 'use client'
 import styles from './styles.module.css'
-import { usePathname } from 'next/navigation'
-import React, { useMemo } from 'react'
+import {usePathname} from 'next/navigation'
+import React, {useMemo} from 'react'
 import Link from 'next/link'
 
 export default function BreadcrumbPage() {
@@ -10,8 +10,8 @@ export default function BreadcrumbPage() {
     if (!pathname) return
 
     const homeLink = (
-      <li style={{ listStyle: 'none' }} key="first">
-        <Link href="/" title="home">
+      <li style={{listStyle: 'none'}} key='first'>
+        <Link href='/' title='home'>
           ~
         </Link>
       </li>
@@ -28,16 +28,12 @@ export default function BreadcrumbPage() {
         return (
           <React.Fragment key={key}>
             {index > 0 && ( // Don't render the span for the first item
-              <span
-                key={`${part}-span`}
-                aria-hidden
-                style={{ color: 'var(--gray)' }}
-              >
+              <span key={`${part}-span`} aria-hidden style={{color: 'var(--gray)'}}>
                 {' '}
                 /{' '}
               </span>
             )}
-            <li style={{ listStyle: 'none' }} key={key}>
+            <li style={{listStyle: 'none'}} key={key}>
               <Link href={href}>{part}</Link>
             </li>
           </React.Fragment>

@@ -1,12 +1,7 @@
 // https://www.joshwcomeau.com/snippets/react-components/fade-in/
 import styles from './fade.module.css'
 
-export default function FadeIn({
-  duration = 300,
-  delay = 0,
-  children,
-  className,
-}) {
+export default function FadeIn({duration = 300, delay = 0, children, className}) {
   return (
     <div
       style={{

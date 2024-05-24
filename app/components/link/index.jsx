@@ -12,18 +12,14 @@ export default function Link({
   tabIndex = 0,
   ...props
 }) {
-  const className = clsx(
-    styles.link,
-    underline && styles.underline,
-    classNameProp,
-  )
+  const className = clsx(styles.link, underline && styles.underline, classNameProp)
 
   if (external) {
     return (
       <a
         href={href}
-        target="_blank"
-        rel="noopener noreferrer"
+        target='_blank'
+        rel='noopener noreferrer'
         className={className}
         title={title}
         tabIndex={tabIndex}
@@ -35,13 +31,7 @@ export default function Link({
   }
 
   return (
-    <NextLink
-      href={href}
-      title={title}
-      className={className}
-      {...props}
-      tabIndex={tabIndex}
-    >
+    <NextLink href={href} title={title} className={className} {...props} tabIndex={tabIndex}>
       {children}
     </NextLink>
   )

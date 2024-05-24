@@ -1,7 +1,7 @@
 'use client'
 import styles from './filterable-list.module.css'
-import { useState, useMemo } from 'react'
-import { useSearchParams } from 'next/navigation'
+import {useState, useMemo} from 'react'
+import {useSearchParams} from 'next/navigation'
 import Link from 'next/link'
 import Badge from '../../components/badge'
 import Input from '../../components/input'
@@ -78,8 +78,8 @@ export default function FilterableList({
           <Input
             value={search}
             onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search"
-            aria-label="Search items"
+            placeholder='Search'
+            aria-label='Search items'
           />
         </div>
       ) : null}
@@ -92,16 +92,13 @@ export default function FilterableList({
             gap: 'var(--gap-half)',
           }}
         >
-          <Badge key="all" style={selectedTag ? {} : selectedBadgeStyles}>
+          <Badge key='all' style={selectedTag ? {} : selectedBadgeStyles}>
             <Link href={tagHref('')} scroll={false} style={linkStyles}>
               All
             </Link>
           </Badge>
           {allTags.map(([tag, count]) => (
-            <Badge
-              key={tag}
-              style={selectedTag === tag ? selectedBadgeStyles : {}}
-            >
+            <Badge key={tag} style={selectedTag === tag ? selectedBadgeStyles : {}}>
               <Link href={tagHref(tag)} scroll={false} style={linkStyles}>
                 {tag} ({count})
               </Link>
@@ -109,11 +106,7 @@ export default function FilterableList({
           ))}
         </div>
       )}
-      <ul
-        className={styles.items}
-        aria-live="polite"
-        aria-relevant="additions removals"
-      >
+      <ul className={styles.items} aria-live='polite' aria-relevant='additions removals'>
         {filteredItems.map((item) => renderItem(item))}
       </ul>
     </>
