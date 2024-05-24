@@ -64,8 +64,8 @@ export default async function ({params}) {
               style={{
                 fontSize: 30,
                 fontWeight: 700,
-                color: 'fuchsia',
-                padding: '10px 0px 0px 10px',
+                color: 'yellow',
+                padding: '10px 10px 0px 0px',
               }}
             >
               {date}
