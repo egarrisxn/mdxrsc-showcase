@@ -1,0 +1,32 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper .date {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--gray);
+}
+
+.wrapper .lastModified {
+  color: var(--gray);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.wrapper .title {
+  margin-top: 1rem;
+}
+
+.content {
+  overflow: auto;
+  color: var(--gray-alpha);
+  font-weight: 500;
+  margin-left: var(--gap-double);
+}
+
+.icon {
+  color: var(--gray) !important;
+  padding: var(--gap-half) !important;
+}

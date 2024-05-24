@@ -1,0 +1,21 @@
+.button {
+  background: none;
+  border: none;
+  padding: 0;
+  color: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+.button::before {
+  @media (min-width: 768px) {
+    content: "Florida:";
+  }
+
+  @media (max-width: 767px) {
+    content: "FL:";
+  }
+}

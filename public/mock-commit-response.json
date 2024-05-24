@@ -1,0 +1,75 @@
+[
+  {
+    "sha": "8e1b459944cd09e1fbb8e57f17acde0984d48cb8",
+    "node_id": "C_kwDOL_WeE9oAKDhlMWI0NTk5NDRjZDA5ZTFmYmI4ZTU3ZjE3YWNkZTA5ODRkNDhjYjg",
+    "commit": {
+      "author": {
+        "name": "EGARRISXN",
+        "email": "egarrisxn@gmail.com",
+        "date": "2024-05-23T00:29:30Z"
+      },
+      "committer": {
+        "name": "EGARRISXN",
+        "email": "egarrisxn@gmail.com",
+        "date": "2024-05-23T00:29:30Z"
+      },
+      "message": "Initial commit from Create Next App",
+      "tree": {
+        "sha": "90c93aa95b61f062b16d3a9a6263ab77518aee51",
+        "url": "https://api.github.com/repos/egarrisxn/mdxrsc-showcase/git/trees/90c93aa95b61f062b16d3a9a6263ab77518aee51"
+      },
+      "url": "https://api.github.com/repos/egarrisxn/mdxrsc-showcase/git/commits/8e1b459944cd09e1fbb8e57f17acde0984d48cb8",
+      "comment_count": 0,
+      "verification": {
+        "verified": false,
+        "reason": "unsigned",
+        "signature": null,
+        "payload": null
+      }
+    },
+    "url": "https://api.github.com/repos/egarrisxn/mdxrsc-showcase/commits/8e1b459944cd09e1fbb8e57f17acde0984d48cb8",
+    "html_url": "https://github.com/egarrisxn/mdxrsc-showcase/commit/8e1b459944cd09e1fbb8e57f17acde0984d48cb8",
+    "comments_url": "https://api.github.com/repos/egarrisxn/mdxrsc-showcase/commits/8e1b459944cd09e1fbb8e57f17acde0984d48cb8/comments",
+    "author": {
+      "login": "egarrisxn",
+      "id": 126130230,
+      "node_id": "U_kgDOB4SYNg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126130230?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/egarrisxn",
+      "html_url": "https://github.com/egarrisxn",
+      "followers_url": "https://api.github.com/users/egarrisxn/followers",
+      "following_url": "https://api.github.com/users/egarrisxn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/egarrisxn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/egarrisxn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/egarrisxn/subscriptions",
+      "organizations_url": "https://api.github.com/users/egarrisxn/orgs",
+      "repos_url": "https://api.github.com/users/egarrisxn/repos",
+      "events_url": "https://api.github.com/users/egarrisxn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/egarrisxn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "committer": {
+      "login": "egarrisxn",
+      "id": 126130230,
+      "node_id": "U_kgDOB4SYNg",
+      "avatar_url": "https://avatars.githubusercontent.com/u/126130230?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/egarrisxn",
+      "html_url": "https://github.com/egarrisxn",
+      "followers_url": "https://api.github.com/users/egarrisxn/followers",
+      "following_url": "https://api.github.com/users/egarrisxn/following{/other_user}",
+      "gists_url": "https://api.github.com/users/egarrisxn/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/egarrisxn/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/egarrisxn/subscriptions",
+      "organizations_url": "https://api.github.com/users/egarrisxn/orgs",
+      "repos_url": "https://api.github.com/users/egarrisxn/repos",
+      "events_url": "https://api.github.com/users/egarrisxn/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/egarrisxn/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "parents": []
+  }
+]
