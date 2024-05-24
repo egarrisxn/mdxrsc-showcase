@@ -1,25 +1,9 @@
 import './styles/global.css'
 import styles from './layout.module.css'
-import {Roboto, Roboto_Mono} from 'next/font/google'
+import {GeistSans} from 'geist/font/sans'
 import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from 'next-themes'
 // import { Analytics } from '@vercel/analytics/react'
-
-const roboto = Roboto({
-  subsets: ['latin'],
-  variable: '--font-roboto',
-  display: 'swap',
-  style: ['normal', 'italic'],
-  weight: ['100', '300', '400', '500', '700', '900'],
-})
-
-const roboto_mono = Roboto_Mono({
-  subsets: ['latin'],
-  variable: '--font-roboto-mono',
-  display: 'swap',
-  style: ['normal', 'italic'],
-  weight: ['100', '200', '300', '400', '500', '700'],
-})
 
 export const dynamic = 'force-static'
 
@@ -28,7 +12,7 @@ export default function RootLayout({children}) {
     <html
       lang='en'
       suppressHydrationWarning
-      className={`${roboto.variable} ${roboto_mono.variable}`}
+      className={`${GeistSans.variable} ${GeistMono.variable}`}
     >
       <body>
         <ThemeProvider>

@@ -3,8 +3,9 @@
 
 :root {
   /* Typography */
-  --font-sans: var(--font-roboto), -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
-  --font-mono: var(--font-roboto-mono), 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
+  --font-sans: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, 'Roboto', 'Helvetica Neue',
+    sans-serif;
+  --font-mono: var(--font-geist-mono), 'SFMono-Regular', 'Consolas', 'Liberation Mono', 'Menlo',
     monospace;
 
   /* Transitions */

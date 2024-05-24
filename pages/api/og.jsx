@@ -1,18 +1,18 @@
-import { ImageResponse } from 'next/og'
+import {ImageResponse} from 'next/og'
 export const runtime = 'edge'
 
-const font = fetch(new URL('./fonts/Inter-Medium.ttf', import.meta.url)).then(
-  (res) => res.arrayBuffer(),
+const font = fetch(new URL('./fonts/Inter-Medium.ttf', import.meta.url)).then((res) =>
+  res.arrayBuffer(),
 )
 
 const handler = async (req) => {
   const fontData = await font
-  const { searchParams } = new URL(req.url)
+  const {searchParams} = new URL(req.url)
   const title = searchParams.get('title')
   const date = searchParams.get('date')
 
   if (!title) {
-    return new Response('Missing title', { status: 400 })
+    return new Response('Missing title', {status: 400})
   }
 
   return new ImageResponse(
@@ -23,8 +23,7 @@ const handler = async (req) => {
           height: '100%',
           width: '100%',
           alignItems: 'center',
-          letterSpacing: '-.02em',
-          fontWeight: 700,
+          fontWeight: 800,
           background: '#000',
           flexDirection: 'column',
         }}
@@ -35,27 +34,26 @@ const handler = async (req) => {
             justifyContent: 'space-between',
             alignItems: 'flex-start',
             width: '100%',
-            padding: '10px 50px',
+            padding: '10px 0px 0px 10px',
           }}
         >
           <span
             style={{
-              fontSize: 25,
+              fontSize: 30,
               fontWeight: 700,
-              background: 'white',
-              color: 'black',
-              padding: '4px 10px',
+              color: 'fuchsia',
+              padding: '10px 0px 0px 10px',
             }}
           >
-            Showcase
+            ||||
           </span>
           {date && (
             <div
               style={{
-                fontSize: 25,
-                background: 'white',
-                color: 'black',
-                padding: '4px 10px',
+                fontSize: 30,
+                fontWeight: 700,
+                color: 'fuchsia',
+                padding: '10px 0px 0px 10px',
               }}
             >
               {date}
@@ -80,9 +78,9 @@ const handler = async (req) => {
             <div
               style={{
                 fontSize: 65,
-                fontWeight: 900,
+                fontWeight: 800,
                 marginBottom: 40,
-                lineHeight: 1.1,
+                lineHeight: 1,
               }}
             >
               {title}
