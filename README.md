@@ -6,7 +6,7 @@
 
 A little project with to test the waters of MDX (Markdown+JSX) and RSC (React Server Components). Using Next.js and deploying with Vercel.
 
-![mdxrscshowcase](https://github.com/egarrisxn/mdxrsc-showcase/assets/126130230/629767ce-66cb-47d7-92d0-f99f9a8d2d54)
+![mdx1](https://github.com/egarrisxn/mdxrsc-showcase/assets/126130230/283a2ceb-d4ea-432d-8605-725c993898ef)
 
 ## Technologies
 
