@@ -11,21 +11,7 @@ export const metadata = {
 export default function About() {
   return (
     <article>
-      <p>
-        This site is using the powrful{' '}
-        <Link external href='https://nextjs.com'>
-          Next.js 14
-        </Link>{' '}
-        App Directory and is deployed with{' '}
-        <Link external href='https://vercel.com/home'>
-          Vercel
-        </Link>
-        . You can view the repository over on my{' '}
-        <Link external href='https://github.com/egarrisxn'>
-          GitHub
-        </Link>
-        .
-      </p>
+      <p>About me.</p>
     </article>
   )
 }

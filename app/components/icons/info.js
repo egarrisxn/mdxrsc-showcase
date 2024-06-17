@@ -1,10 +1,3 @@
-/**
- * CSS Variables:
- *
- * --info-stroke-circle-color
- *
- * --info-stroke-line-color
- */
 const Info = () => (
   <svg
     xmlns='http://www.w3.org/2000/svg'

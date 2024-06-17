@@ -12,7 +12,7 @@ export default function BreadcrumbPage() {
     const homeLink = (
       <li style={{listStyle: 'none'}} key='first'>
         <Link href='/' title='home'>
-          ~
+          -
         </Link>
       </li>
     )

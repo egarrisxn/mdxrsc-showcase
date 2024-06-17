@@ -1,12 +1,15 @@
-@media screen and (max-width: 768px) {
-  .secondHeading {
-    margin-top: var(--gap-half);
-  }
+.postnotes {
+  display: flex;
+  padding-top: 0.2em;
+  padding-bottom: 1.5em;
 }
 
 .footer {
+  color: var(--gray);
   margin-top: var(--small-gap);
   display: flex;
-  justify-content: space-between;
-  color: var(--gray);
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 2.5em;
 }

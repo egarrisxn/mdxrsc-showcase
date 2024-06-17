@@ -1,97 +1,19 @@
 'use client'
 import styles from './timer.module.css'
-import React, {useEffect, useState} from 'react'
-
-const timeStringOptions = [
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'basic',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'best fit',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'best fit',
-    weekday: 'long',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'best fit',
-    weekday: 'long',
-    era: 'long',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'best fit',
-    weekday: 'long',
-    era: 'long',
-    year: 'numeric',
-  },
-  {
-    hour: 'numeric',
-    minute: 'numeric',
-    second: 'numeric',
-    hour12: true,
-    timeZoneName: 'short',
-    formatMatcher: 'best fit',
-  },
-]
+import {useEffect, useState} from 'react'
 
 const TimeOfDay = () => {
-  const [format, setFormat] = useState(timeStringOptions[0])
-
-  const onClick = () => {
-    const nextFormat = timeStringOptions.indexOf(format) + 1
-    if (nextFormat >= timeStringOptions.length) {
-      setFormat(timeStringOptions[0])
-    } else {
-      setFormat(timeStringOptions[nextFormat])
-    }
-  }
-
   return (
-    <button className={styles.button} onClick={onClick} type='button' aria-label='Time of day'>
-      <MemoTimeDisplay format={format} />
-    </button>
+    <div className={styles.time} aria-label='Time of day'>
+      <span className={styles.name}>Orlando, FL : </span>
+      <TimeDisplay />
+    </div>
   )
 }
 
 export default TimeOfDay
 
-const TimeDisplay = ({format}) => {
+const TimeDisplay = () => {
   const [time, setTime] = useState(new Date())
 
   useEffect(() => {
@@ -100,12 +22,14 @@ const TimeDisplay = ({format}) => {
   }, [])
 
   return (
-    <span suppressHydrationWarning>
+    <div suppressHydrationWarning>
       {time.toLocaleTimeString('en-US', {
+        hour: 'numeric',
+        minute: 'numeric',
+        second: 'numeric',
+        hour12: true,
         timeZone: 'America/New_York',
-        ...format,
       })}
-    </span>
+    </div>
   )
 }
-const MemoTimeDisplay = React.memo(TimeDisplay)

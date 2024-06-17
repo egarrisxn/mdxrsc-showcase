@@ -3,7 +3,7 @@ import styles from './layout.module.css'
 import {GeistSans} from 'geist/font/sans'
 import {GeistMono} from 'geist/font/mono'
 import {ThemeProvider} from 'next-themes'
-// import { Analytics } from '@vercel/analytics/react'
+import {Analytics} from '@vercel/analytics/react'
 
 export const dynamic = 'force-static'
 
@@ -20,7 +20,7 @@ export default function RootLayout({children}) {
             <main className={styles.main}>{children}</main>
           </div>
         </ThemeProvider>
-        {/* <Analytics /> */}
+        <Analytics />
       </body>
     </html>
   )
@@ -30,9 +30,9 @@ export const metadata = {
   metadataBase: new URL('https://mdxrsc-showcase.vercel.app/'),
   title: {
     template: '%s | Showcase',
-    default: 'Showcase',
+    default: 'Showcase.',
   },
-  description: 'Showcasing RSC & MDX.',
+  description: 'Showcasing what we can do with React Server Components and beyond.',
   robots: {
     index: true,
     follow: true,
@@ -42,7 +42,7 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: 'Showcase',
+    title: 'Showcase.',
     url: 'https://mdxrsc-showcase.vercel.app/',
     siteName: 'Showcase',
     locale: 'en_US',
@@ -57,7 +57,7 @@ export const metadata = {
     ],
   },
   twitter: {
-    title: 'Showcase',
+    title: 'Showcase.',
     card: 'summary_large_image',
     creator: '@eg_xo_',
   },

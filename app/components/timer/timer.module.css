@@ -1,21 +1,13 @@
-.button {
-  background: none;
-  border: none;
+.time {
   padding: 0;
   color: inherit;
-  cursor: pointer;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5em;
+  flex-direction: row;
+  gap: 0.3em;
+  padding-left: 0.1em;
 }
 
-.button::before {
-  @media (min-width: 768px) {
-    content: 'Florida:';
-  }
-
-  @media (max-width: 767px) {
-    content: 'FL:';
-  }
+.name {
+  font-weight: 600;
+  font-size: 1rem;
 }
