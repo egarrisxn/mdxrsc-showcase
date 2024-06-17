@@ -1,10 +1,10 @@
 import styles from './page.module.css'
 import {getProjects} from '../../data/projects'
 import {ContentListRSC} from '../../components/content-list'
+import TimeOfDay from '../../components/timer'
 import Link from '../../components/link'
 import Socials from '../../components/socials'
 import ProjectList from '../../components/projects'
-import TimeOfDay from '../../components/timer'
 import {SpotifyNowPlaying} from '../../components/spotify'
 import Image from 'next/image'
 
@@ -17,8 +17,8 @@ export default async function HomePage() {
       <header>
         <TimeOfDay />
         <p>
-          I do web development & design things. Passionate about learning, growing, and constantly
-          challenging myself to move onwards and upwards. Learn more{' '}
+          I do web development & design things. Passionate about learning and growing. Constantly
+          challenging myself to be out of my comfort zone. Learn more{' '}
           <Link href='/about'>about me</Link>.
         </p>
         <p>Social interests found below:</p>

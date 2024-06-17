@@ -11,6 +11,13 @@ export const metadata = {
 export default function About() {
   return (
     <article>
+      <h5>
+        The group of words below may look familiar, as they have been published one before, by me,
+        over on my other{' '}
+        <Link external href='https://egxworld.net'>
+          personal website.
+        </Link>{' '}
+      </h5>
       <p>
         Greetings! My name is Ethan. I&apos;m dedicated Full-Stack Developer & Designer based in
         Orlando, Florida. My expertise lies in crafting innovative web technologies and applications
