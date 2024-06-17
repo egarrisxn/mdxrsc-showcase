@@ -8,19 +8,27 @@ import TimeOfDay from '../../components/timer'
 import {SpotifyNowPlaying} from '../../components/spotify'
 import Image from 'next/image'
 
-const PROJECT_COUNT = 3
+const PROJECT_COUNT = 4
 
 export default async function HomePage() {
   const projects = await getProjects()
   return (
     <>
       <header>
+        <TimeOfDay />
         <p>
-          Web Developer & Designer! Passionate about learning, while in a constant battle with
-          myself to grow. Learn more <Link href='/about'>about me</Link>.
+          I do web development & design things. Passionate about learning, growing, and constantly
+          challenging myself to move onwards and upwards. Learn more{' '}
+          <Link href='/about'>about me</Link>.
         </p>
-        <p>Social interests found here:</p>
+        <p>Social interests found below:</p>
         <Socials />
+        <p>
+          Available for work //{' '}
+          <Link external href='https://build-that-resume.vercel.app/example-resume'>
+            Resume
+          </Link>{' '}
+        </p>
       </header>
       <section>
         <div style={{position: 'relative'}}>
@@ -61,7 +69,6 @@ export default async function HomePage() {
         <ContentListRSC />
       </section>
       <footer className={styles.footer}>
-        <TimeOfDay />
         <SpotifyNowPlaying />
       </footer>
     </>

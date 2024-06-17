@@ -5,6 +5,30 @@ import path from 'path'
 
 const thirdPartyPosts = [
   {
+    title: '#5 | The Headless CMS',
+    description: 'Why Sanity Studios is the ideal CMS for your next project?',
+    body: '',
+    date: '2024-06-16',
+    slug: 'the-headless-cms',
+    tags: [],
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'https://www.egxblog.net/blog/the-headless-cms',
+    type: 'post',
+  },
+  {
+    title: '#4 | Navigating the Storm',
+    description: 'Understanding the Recent Wave of Layoffs in the Tech Industry',
+    body: '',
+    date: '2024-05-25',
+    slug: 'navigating-the-storm',
+    tags: [],
+    lastModified: 0,
+    isThirdParty: true,
+    href: 'https://www.egxblog.net/blog/navigating-the-storm',
+    type: 'post',
+  },
+  {
     title: '#3 | A Paradigm Shift',
     description: 'The Ascendance of AI in Software and Web Development: A Paradigm Shift',
     body: '',

@@ -11,5 +11,5 @@ export const metadata = {
 
 export default async function Projects() {
   const projects = await getProjects()
-  return <ProjectList showYears={true} projects={projects} seeMore={false} />
+  return <ProjectList showYears={true} projects={projects} seeMore={true} />
 }
