@@ -6,7 +6,8 @@
 
 A minimalist inspired website, using MDX, Next.js, React Server Components, & more!
 
-![mdx1](https://github.com/egarrisxn/mdxrsc-showcase/assets/126130230/283a2ceb-d4ea-432d-8605-725c993898ef)
+![egxrsc](https://github.com/egarrisxn/egxrsc/assets/126130230/cc20a15e-d43f-4340-9ad7-b86127a5dfa3)
+
 
 ## Technologies
 
