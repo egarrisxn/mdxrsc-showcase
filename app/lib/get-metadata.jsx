@@ -10,7 +10,7 @@ export function getMetadata({
 }) {
   const domain =
     process.env.NODE_ENV === 'production'
-      ? 'https://mdxrsc-showcase.vercel.app'
+      ? 'https://egxrsc.vercel.app'
       : process.env.NEXT_PUBLIC_VERCEL_URL
         ? `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`
         : 'http://localhost:3000'

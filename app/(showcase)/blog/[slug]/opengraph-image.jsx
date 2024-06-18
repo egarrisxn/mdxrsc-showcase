@@ -8,7 +8,7 @@ export const runtime = 'edge'
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async function ({params}) {
   const res = await fetch(
-    `https://raw.githubusercontent.com/egarrisxn/mdxrsc-showcase/master/posts/${params.slug}.mdx`,
+    `https://raw.githubusercontent.com/egarrisxn/egxrsc/master/posts/${params.slug}.mdx`,
   )
 
   if (!res.ok) {

@@ -14,7 +14,7 @@ export const generateMetadata = async ({params}) => {
     title: post?.title,
     description: post?.description,
     alternates: {
-      canonical: `https://mdxrsc-showcase.vercel.app/blog/${params.slug}`,
+      canonical: `https://egxrsc.vercel.app/blog/${params.slug}`,
     },
   }
 }

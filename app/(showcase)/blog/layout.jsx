@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Blog',
   description: 'Blog.',
   alternates: {
-    canonical: 'https://mdxrsc-showcase.vercel.app/blog',
+    canonical: 'https://egxrsc.vercel.app/blog',
   },
 }
 

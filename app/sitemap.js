@@ -7,14 +7,14 @@ export default async function sitemap() {
 
   const blogs = posts
     .map((post) => ({
-      url: `http://mdxrsc-showcase.vercel.app/${post.slug}`,
+      url: `http://egxrsc.vercel.app/${post.slug}`,
       lastModified: post.lastModified
         ? new Date(post.lastModified).toISOString().split('T')[0]
         : new Date().toISOString().split('T')[0],
     }))
     .concat(
       notes.map((note) => ({
-        url: `http://mdxrsc-showcase.vercel.app/notes/${note.slug}`,
+        url: `http://egxrsc.vercel.app/notes/${note.slug}`,
         lastModified: note.lastModified
           ? new Date(note.lastModified).toISOString().split('T')[0]
           : new Date().toISOString().split('T')[0],
@@ -22,7 +22,7 @@ export default async function sitemap() {
     )
 
   const routes = ['', '/about', '/projects'].map((route) => ({
-    url: `http://mdxrsc-showcase.vercel.app${route}`,
+    url: `http://egxrsc.vercel.app${route}`,
     lastModified: new Date().toISOString().split('T')[0],
   }))
 

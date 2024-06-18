@@ -14,7 +14,7 @@ export async function generateMetadata({params}) {
     title: note?.title,
     description: note?.description,
     alternates: {
-      canonical: `https://mdxrsc-showcase.vercel.app/notes/${params.slug}`,
+      canonical: `https://egxrsc.vercel.app/notes/${params.slug}`,
     },
   }
 }

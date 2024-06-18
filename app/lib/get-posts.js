@@ -97,7 +97,7 @@ export const getPosts = cache(async (includeThirdPartyPosts) => {
 
         const fetchUrl =
           process.env.NODE_ENV === 'production'
-            ? `https://api.github.com/repos/egarrisxn/mdxrsc-showcase/commits?path=${withoutLeadingChars}&page=1&per_page=1`
+            ? `https://api.github.com/repos/egarrisxn/egxrsc/commits?path=${withoutLeadingChars}&page=1&per_page=1`
             : `http://localhost:3000/mock-commit-response.json`
 
         const commitInfoResponse = await fetch(fetchUrl, {

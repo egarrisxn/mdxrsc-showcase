@@ -4,7 +4,7 @@ export const metadata = {
   title: 'Notes',
   description: 'Notes.',
   alternates: {
-    canonical: 'https://mdxrsc-showcase.vercel.app/notes',
+    canonical: 'https://egxrsc.vercel.app/notes',
   },
 }
 

@@ -27,7 +27,7 @@ export default function RootLayout({children}) {
 }
 
 export const metadata = {
-  metadataBase: new URL('https://mdxrsc-showcase.vercel.app/'),
+  metadataBase: new URL('https://egxrsc.vercel.app/'),
   title: {
     template: '%s | Showcase',
     default: 'Showcase.',
@@ -43,13 +43,13 @@ export const metadata = {
   },
   openGraph: {
     title: 'Showcase.',
-    url: 'https://mdxrsc-showcase.vercel.app/',
+    url: 'https://egxrsc.vercel.app/',
     siteName: 'Showcase',
     locale: 'en_US',
     type: 'website',
     images: [
       {
-        url: `https://mdxrsc-showcase.vercep.app/api/og?title=${encodeURIComponent('Showcase')}`,
+        url: `https://egxrsc.vercep.app/api/og?title=${encodeURIComponent('Showcase')}`,
         width: 1200,
         height: 630,
         alt: 'Showcase',
@@ -62,7 +62,7 @@ export const metadata = {
     creator: '@eg_xo_',
   },
   icons: {
-    shortcut: 'https://mdxrsc-showcase.vercel.app/favicon/favicon.ico',
+    shortcut: 'https://egxrsc.vercel.app/favicon/favicon.ico',
   },
 }
 

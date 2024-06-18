@@ -25,7 +25,7 @@ export default async function HomePage() {
         <Socials />
         <p>
           Available for work //{' '}
-          <Link external href='https://build-that-resume.vercel.app/example-resume'>
+          <Link external href='https://devbuild-resume.vercel.app/example-resume'>
             Resume
           </Link>{' '}
         </p>

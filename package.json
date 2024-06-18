@@ -1,8 +1,8 @@
 {
-  "name": "mdxrsc-showcase",
+  "name": "egxrsc",
   "version": "1.0.0",
   "description": "Showcasing what we can do with React Server Components and beyond.",
-  "homepage": "http://mdxrsc-showcase.vercel.app",
+  "homepage": "http://egxrsc.vercel.app",
   "author": "Ethan G",
   "license": "MIT",
   "private": true,
@@ -64,5 +64,13 @@
     "rehype-slug": "^6.0.0",
     "remark-gfm": "^4.0.0"
   },
+  "prettier" : {
+    "semi": false,
+    "tabWidth": 2,
+    "printWidth": 100,
+    "bracketSpacing": false,
+    "singleQuote": true,
+    "jsxSingleQuote": true
+    },
   "packageManager": "pnpm@9.2.0+sha512.98a80fd11c2e7096747762304106432b3ddc67dcf54b5a8c01c93f68a2cd5e05e6821849522a06fb76284d41a2660d5e334f2ee3bbf29183bf2e739b1dafa771"
 }

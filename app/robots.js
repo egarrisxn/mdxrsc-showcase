@@ -6,7 +6,7 @@ export default function robots() {
         allow: ['/'],
       },
     ],
-    sitemap: 'http://mdxrsc-showcase.vercel.app/sitemap.xml',
-    host: 'http://mdxrsc-showcase.vercel.app',
+    sitemap: 'http://egxrsc.vercel.app/sitemap.xml',
+    host: 'http://egxrsc.vercel.app',
   }
 }
