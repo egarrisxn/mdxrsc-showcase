@@ -11,9 +11,10 @@ A minimalist inspired website, using MDX, Next.js, React Server Components, & mo
 
 ## Technologies
 
-- MDX
+- MDX (Markdown)
 - React (RSC)
-- Next.js
+- Next.js 14
+- Radix UI
 - Vercel
 
 ## Getting Started
