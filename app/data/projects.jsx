@@ -1,4 +1,4 @@
-import {cache} from 'react'
+import { cache } from 'react'
 
 const Projects = [
   {
@@ -45,6 +45,14 @@ const Projects = [
     title: 'Vanilla Template',
     description: 'A little portfolio template using only HTML5, CSS3, & JavaScript.',
     href: 'https://github.com/egarrisxn/portfolio-template',
+    role: 'Creator',
+    years: ['2024'],
+    type: 'project',
+  },
+  {
+    title: 'Theme Party',
+    description: 'A little theme playground using Vite and deployed with netlify!',
+    href: 'https://github.com/egarrisxn/vite-theme-party',
     role: 'Creator',
     years: ['2024'],
     type: 'project',
